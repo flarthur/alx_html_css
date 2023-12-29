@@ -1,0 +1,125 @@
+/* remove custom spacing   */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    /* margin: 10px; */
+    /* border: 1px soild black; */
+    width: auto;
+    height: 630px;
+    background-image: url('IMAGES 1/headphones_hero_1.jpg');
+}
+
+/* first child element */
+
+.first-child{
+   
+  /* text-align: center; */
+    /* align-items: center; */
+     display: flex; 
+     flex-direction: row;
+    justify-content:space-evenly; 
+}
+
+.first-child-element{
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.second-child-element{
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+
+.menu-list{
+    list-style: none;
+    display: flex;
+   
+   
+}
+
+.menu-list li a{
+    font-size: 25px;
+    margin-right: 25px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+ul li  a:hover{
+    color: orangered;
+}
+
+/* second child  */
+
+.second-child{
+    margin-top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    color:white;
+font-size: 30px;
+font-weight: 600;
+text-align: center;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(240, 64, 116);
+    border: none;
+    color: white;
+    font-weight: 400;
+    text-transform:uppercase;
+    cursor:grab;
+}
+
+
+
+.text-1{
+    margin-top: 30px;
+    color:white;
+    text-align: center;
+    
+   
+
+}
+/* what we do */
+
+.about-info{
+     margin-top: 35px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+} 
+
+.head-prefect{
+    padding: 10px;
+}
+
+.about-info-subhead{
+    margin-top: 15px;
+}
+.display-flex{
+
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+/*making the first child block when screen width hits 820 */
+@media only screen and (max-width:826px) {
+    .first-child{
+        display: block;
+        /* flex-direction: column; */
+    }
+}
